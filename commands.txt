@@ -1,0 +1,5 @@
+set PROTO_FOLDER_PATH=C:\Users\siva\repos\my-gRPC
+set PROTO_PLUGIN_PATH=C:\Users\siva\Apps\protoc\bin\protoc-gen-grpc-java.exe
+set OUTPUT_DIR=C:\Users\siva\repos\my-gRPC\src\main\java
+
+protoc --proto_path=%PROTO_FOLDER_PATH% --plugin=protoc-gen-grpc-java=%PROTO_PLUGIN_PATH% --grpc-java_out=%OUTPUT_DIR% --java_out=%OUTPUT_DIR% %PROTO_FOLDER_PATH%\idl\emp.proto
